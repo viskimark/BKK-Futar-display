@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "BKK_API_manager", "BKK_API_manager\BKK_API_manager.fsproj", "{32D5C4AF-5BE6-4B53-AF04-FF12B9C8C75D}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ConsoleTester", "ConsoleTester\ConsoleTester.fsproj", "{9718E166-92C7-465E-ABC2-A02219D9C20E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorUI", "BlazorUI\BlazorUI.csproj", "{8B85E36F-502A-433C-95B7-B30B39A34ABC}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BoleroUI.Client", "BoleroUI\src\BoleroUI.Client\BoleroUI.Client.fsproj", "{67CDC2A9-22B7-48BB-A7F3-E06FBED79311}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BoleroUI.Server", "BoleroUI\src\BoleroUI.Server\BoleroUI.Server.fsproj", "{413FC43D-BF93-4F61-996F-9972943E9F8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32D5C4AF-5BE6-4B53-AF04-FF12B9C8C75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D5C4AF-5BE6-4B53-AF04-FF12B9C8C75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D5C4AF-5BE6-4B53-AF04-FF12B9C8C75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D5C4AF-5BE6-4B53-AF04-FF12B9C8C75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9718E166-92C7-465E-ABC2-A02219D9C20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9718E166-92C7-465E-ABC2-A02219D9C20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9718E166-92C7-465E-ABC2-A02219D9C20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9718E166-92C7-465E-ABC2-A02219D9C20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B85E36F-502A-433C-95B7-B30B39A34ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B85E36F-502A-433C-95B7-B30B39A34ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B85E36F-502A-433C-95B7-B30B39A34ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B85E36F-502A-433C-95B7-B30B39A34ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CDC2A9-22B7-48BB-A7F3-E06FBED79311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CDC2A9-22B7-48BB-A7F3-E06FBED79311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CDC2A9-22B7-48BB-A7F3-E06FBED79311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CDC2A9-22B7-48BB-A7F3-E06FBED79311}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413FC43D-BF93-4F61-996F-9972943E9F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413FC43D-BF93-4F61-996F-9972943E9F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413FC43D-BF93-4F61-996F-9972943E9F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413FC43D-BF93-4F61-996F-9972943E9F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55CFB6E5-BEAC-4F94-8A43-B7FC2438F608}
+	EndGlobalSection
+EndGlobal

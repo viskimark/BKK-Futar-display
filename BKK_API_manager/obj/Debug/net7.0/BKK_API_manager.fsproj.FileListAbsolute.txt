@@ -1,0 +1,13 @@
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Debug\net7.0\BKK_API_manager.deps.json
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Debug\net7.0\BKK_API_manager.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Debug\net7.0\BKK_API_manager.pdb
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Debug\net7.0\BKK_API_manager.xml
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.fsproj.AssemblyReference.cache
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.AssemblyInfoInputs.cache
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.AssemblyInfo.fs
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.fsproj.CoreCompileInputs.cache
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\refint\BKK_API_manager.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.xml
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.pdb
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\ref\BKK_API_manager.dll

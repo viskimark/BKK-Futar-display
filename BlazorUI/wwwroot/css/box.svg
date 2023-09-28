@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="11.986676mm"
+   height="5.8441567mm"
+   viewBox="0 0 11.986676 5.8441567"
+   version="1.1"
+   id="svg2237"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="box.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2239"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="14.929102"
+     inkscape:cx="29.405653"
+     inkscape:cy="-3.1482135"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2234" />
+  <g
+     inkscape:label="Réteg 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#009fe3;fill-opacity:1;stroke:none;stroke-width:2.00001;stroke-linejoin:round;stroke-opacity:1"
+       id="rect340"
+       width="11.987"
+       height="5.8439999"
+       x="0"
+       y="4.4408921e-16"
+       rx="0.64999998" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.93889px;line-height:1;font-family:'Frutiger Next';-inkscape-font-specification:'Frutiger Next Bold';text-align:end;letter-spacing:-0.264583px;text-anchor:end;fill:#e3e3e3;fill-opacity:1;stroke-width:2;stroke-linejoin:round"
+       x="11.315857"
+       y="4.5666504"
+       id="text394"><tspan
+         sodipodi:role="line"
+         id="tspan392"
+         style="font-size:4.93889px;fill:#e3e3e3;fill-opacity:1;stroke-width:2"
+         x="11.051274"
+         y="4.5666504">223E</tspan></text>
+  </g>
+</svg>
