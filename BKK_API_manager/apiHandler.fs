@@ -14,9 +14,8 @@ module apiHandler =
         //for id in stopIds do
         //    stopId <- stopId + "stopId=" + id + "&"
 
-    let stopDeparturesUrl (stop:JsonStructures.StopsStructure.Stop) = "https://futar.bkk.hu/api/query/v1/ws/otp/api/where/arrivals-and-departures-for-stop?minutesBefore=1&minutesAfter=60&" + stopIds(stop)
-    //Ennek a végére kell beilleszteni az API kulcsot
-    + "onlyDepartures=true&limit=60&version=4&includeReferences=compact&key="
+    let key = File.ReadAllText "key.txt"
+    let stopDeparturesUrl (stop:JsonStructures.StopsStructure.Stop) = "https://futar.bkk.hu/api/query/v1/ws/otp/api/where/arrivals-and-departures-for-stop?minutesBefore=1&minutesAfter=60&" + stopIds(stop) + "onlyDepartures=true&limit=60&version=4&includeReferences=compact&key=" + key
     
     let getJson url =
         async {
@@ -67,7 +66,7 @@ module apiHandler =
     let getDepartures (stop:JsonStructures.StopsStructure.Stop) =
         async {
             try
-                let! json = getJson (stopDeparturesUrl(stop))
+                let! json = getJson (stopDeparturesUrl stop)
                 return getDeparturesFromJson(json)
             with
                 |ex -> 

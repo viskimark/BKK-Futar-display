@@ -9,8 +9,15 @@ Ez az alkalmazás a Budapesten található LCD-s Futár kijelzők szimulációja
 
 Az alapja F#-ban készült, míg a UI Blazor segítségével készült.
 
-A használathoz szükséges egy **Futár API kulcs**, ami jelenleg az apiHandler.fs-ben, a stopDeparturesUrl végén van hardcode-olva, ezt később ki fogom szervezni egy egyszerű txt fájlba, az egyszerűbb átírás miatt.
+![image of the program running](https://github.com/viskimark/BKK-Futar-display/blob/main/img.png?raw=true)
 
-A követhető megállókat a **megallok.json** fájlba lehet felvinni.
+A használathoz szükséges egy **Futár API kulcs**, amihez szükséges egy key.txt fájl létrehozása (alapesetben a BlazorUI mappán belül), s a saját kulcs beillesztése.
+
+A követhető megállókat a **megallok.json** fájlba lehet felvinni. A követett megállókhoz meg lehet adni, hogy milyen kijáratot párosítson mellé a program (ld. bemutató kép).
+
+Lehet fiktív járatokat létrehozni, amik alapesetben a **fiktiv.json** fájlban vannak. A program felépítéséből adódóan a megallok.json fájlban egyszerűen fel lehet venni fiktív megállókat is,
+ezáltal a saját járatainkat nem feltétlen csak létező megállóból lehet követni.
+
+![image of fictive routes](https://github.com/viskimark/BKK-Futar-display/blob/main/fiktiv.png?raw=true)
 
 A programon belül a megálló nevére kattintva lehet másik megállót választani, valamint egy alternatív, fiktív-retro stílusra is át lehet váltani.
