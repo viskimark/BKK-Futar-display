@@ -922,3 +922,5 @@ C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\obj\Release\net7.0\build-
 C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\obj\Release\net7.0\build-gz\fhiFypWO.gz
 C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\obj\Release\net7.0\build-gz\gtsHc+Us.gz
 C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\obj\Release\net7.0\build-gz\7mcexTHb.gz
+C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\bin\Release\net7.0\fiktiv.json
+C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\bin\Release\net7.0\megallok.json

@@ -922,3 +922,5 @@ C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\obj\Debug\net7.0\BlazorWA
 C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\obj\Debug\net7.0\refint\BlazorWASM.dll
 C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\obj\Debug\net7.0\BlazorWASM.pdb
 C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\obj\Debug\net7.0\ref\BlazorWASM.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\bin\Debug\net7.0\fiktiv.json
+C:\Users\1visk\source\repos\BKK_API_manager\BlazorWASM\bin\Debug\net7.0\megallok.json
