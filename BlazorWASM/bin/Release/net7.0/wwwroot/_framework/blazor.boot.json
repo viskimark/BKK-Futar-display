@@ -207,15 +207,15 @@
       "mscorlib.dll": "sha256-kgowZLZGyceaJo4bHvVY1kmm1GJuawa5rPO1RCfNYWc=",
       "netstandard.dll": "sha256-2\/SuexPFW8hizUgbgPcchYHfG\/zmGzzMN6ESSyefPRQ=",
       "System.Private.CoreLib.dll": "sha256-mcywrbK0VZXiOvZ4dxU1ocaPZFplCRSIPQ\/wFikcrus=",
-      "BKK_API_manager.dll": "sha256-cc9ou33xbDXIntv30vE0aLzkI2S7RUHpRKvFCQDSjPY=",
-      "BlazorWASM.dll": "sha256-hg+QeZ6qh1k+cicqaJUwRn9VeFa7vycAeXpPttlYnn0="
+      "BKK_API_manager.dll": "sha256-1S2\/EQCbuTXpBdIf7McPq2MIZ9a8v7HcAFzmztkREnc=",
+      "BlazorWASM.dll": "sha256-833PvfTe7pRszf2\/5o3pDkSoSv\/fwifnResId4FMf+s="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BKK_API_manager.pdb": "sha256-fvohCJgz5NiAXkU0A0GeahrkYQscVZirXb+yPbHF5uI=",
-      "BlazorWASM.pdb": "sha256-o1L65IChHy5Wt\/A+7A8S9azRW9qvHYUfxjQ9KBoBvjc="
+      "BKK_API_manager.pdb": "sha256-VPrMFhPI22olsmuJ2wqTsq2howB1Dsc3BgOGPyS35go=",
+      "BlazorWASM.pdb": "sha256-DKbMSKgEK4xlmZG+Z3fnkRGwAC9C5Mz3FrJ8GY0Rdqs="
     },
     "runtime": {
       "dotnet.7.0.3.yx5vj9dx9n.js": "sha256-DxGvmbtUa6hGJpk3VyMEbkPZ653qWbQkh8X4ZVM9TWM=",

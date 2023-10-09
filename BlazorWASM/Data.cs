@@ -2,12 +2,14 @@
 {
 	public static class Data
 	{
+		public static string key = "";
+		public static BKK_API_manager.apiHandler apiHandler = new BKK_API_manager.apiHandler(key);
 		static int getStartIndex()
 		{
 			int index;
 			try
 			{
-				index = Array.IndexOf(BKK_API_manager.apiHandler.stopNames, "Örs vezér tere M+H (összes)");
+				index = Array.IndexOf(apiHandler.stopNames, "Örs vezér tere M+H (összes)");
 			}
 			catch
 			{
@@ -17,10 +19,10 @@
 		}
 		public static int index = getStartIndex();
 
-		public static BKK_API_manager.Departure[] departures = BKK_API_manager.apiHandler.getDeparturesWithFictive(BKK_API_manager.apiHandler.stops[index], "fiktiv.json");
+		public static BKK_API_manager.Departure[] departures = apiHandler.getDeparturesWithFictive(apiHandler.stops[index], "fiktiv.json");
 		public static void RefreshDepartures()
 		{
-			departures = BKK_API_manager.apiHandler.getDeparturesWithFictive(BKK_API_manager.apiHandler.stops[index], "fiktiv.json");
+			departures = apiHandler.getDeparturesWithFictive(apiHandler.stops[index], "fiktiv.json");
 		}
 	}
 }

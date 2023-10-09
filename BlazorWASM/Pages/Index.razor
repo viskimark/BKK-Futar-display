@@ -9,7 +9,7 @@
 		@if (!showDropdown)
 		{
 			<td style="align-content:center; font-size:175%; padding-left:1%;" colspan="2" @onclick="() => showDropdown = true">
-				@BKK_API_manager.apiHandler.getStopShortName(Data.index)
+				@Data.apiHandler.getStopShortName(Data.index)
 			</td>
 		}
 		else
@@ -17,12 +17,13 @@
 			<td style="align-content:center; font-size:175%; padding-left:1%;" colspan="2">
 				<select @onchange="OnSelect">
 					<option value="">...</option>
-					@for (int i = 0; i < BKK_API_manager.apiHandler.stops.Length; i++)
+					@for (int i = 0; i < Data.apiHandler.stops.Length; i++)
 					{
-						<option value="@i">@BKK_API_manager.apiHandler.getStopLongName(i)</option>
+						<option value="@i">@Data.apiHandler.getStopLongName(i)</option>
 					}
 				</select>
 				<button @onclick="NavigateToPage">Másik stílus</button>
+                <InputText @bind-Value="Data.key" />
 			</td>
 		}
 		<td style="text-align:right; font-size:150%; padding-right:1%;" colspan="2">
