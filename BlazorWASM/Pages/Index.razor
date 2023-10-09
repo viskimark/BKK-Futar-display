@@ -1,9 +1,278 @@
 ﻿@page "/"
+@inject NavigationManager NavigationManager
 
-<PageTitle>Index</PageTitle>
+<head>
+	<link rel="stylesheet" href="/css/site.css" />
+</head>
+<table id="mainTable" cellpadding="0" cellspacing="0">
+	<tr id="topRow">
+		@if (!showDropdown)
+		{
+			<td style="align-content:center; font-size:175%; padding-left:1%;" colspan="2" @onclick="() => showDropdown = true">
+				@BKK_API_manager.apiHandler.getStopShortName(Data.index)
+			</td>
+		}
+		else
+		{
+			<td style="align-content:center; font-size:175%; padding-left:1%;" colspan="2">
+				<select @onchange="OnSelect">
+					<option value="">...</option>
+					@for (int i = 0; i < BKK_API_manager.apiHandler.stops.Length; i++)
+					{
+						<option value="@i">@BKK_API_manager.apiHandler.getStopLongName(i)</option>
+					}
+				</select>
+				<button @onclick="NavigateToPage">Másik stílus</button>
+			</td>
+		}
+		<td style="text-align:right; font-size:150%; padding-right:1%;" colspan="2">
+			@DateTime.Now.ToString("H:mm")
+		</td>
+	</tr>
+	<tr id="infoRow">
+		<td class="left-col" style="padding-top:0px; padding-bottom:0px">
+			<p>Vonal</p>
+			<p class="english">Line</p>
+		</td>
+		<td class="middle-col" style="padding-top:0px; padding-bottom:0px">
+			<p>Célállomás</p>
+			<p class="english">Destination</p>
+		</td>
+		<td class="middle-right-col" style="text-align:left; padding-top:0px; padding-bottom:0px; padding-right:0%;">
+			<p>Indul (perc)</p>
+			<p class="english">Departs (min)</p>
+		</td>
+		<td class="right-col" style="text-align:left; padding-top:0px; padding-bottom:0px">
+			<p>Kijárat</p>
+			<p class="english">Exit</p>
+		</td>
+	</tr>
+	@{
+		//BKK_API_manager.Departure[] departures = BKK_API_manager.apiHandler.getDeparturesWithFictive(BKK_API_manager.apiHandler.stops[index], "fiktiv.json");
+		int limit = 9;
+		bool smallerArray = limit > Data.departures.Length ? true : false;
+		int shown = 0;
+		for (int i = 0; i < limit; i++)
+		{
+			string colorClass = "color2";
+			if (shown % 2 == 0)
+			{
+				colorClass = "color1";
+			}
+			if (smallerArray && i >= Data.departures.Length)
+			{
+				<tr class="@colorClass">
+					<td class="left-col">
 
-<h1>Hello, world!</h1>
+					</td>
+					<td class="middle-col">
 
-Welcome to your new app.
+					</td>
+					<td class="middle-right-col">
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+					</td>
+					<td class="right-col">
+
+					</td>
+				</tr>
+				shown++;
+			}
+			else
+			{
+				if (Data.departures[i].timeUntilDeparture.timeInSeconds > 0)
+				{
+					int fontSize = 100;
+					int charLimit = 35;
+					if (Data.departures[i].route.destination.Length > charLimit)
+					{
+						fontSize -= (int)Math.Round((Data.departures[i].route.destination.Length - charLimit) * ((Data.departures[i].route.destination.Length / charLimit) + 0.35));
+					}
+					<tr class="@colorClass">
+						<td class="left-col">
+							<svg width="60" height="60" style="position:relative; top:8%">
+								<rect style="fill:#@Data.departures[i].route.color;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-opacity:1"
+								id="rect340"
+								width="60"
+								height="60"
+								x="0"
+								y="0"
+								rx="100" />
+								@if (Data.departures[i].route.routeType.IsBUS)
+								{
+									<g id="g9363-9-7-0-9-5-3-7-7-8-6-2-2-2-5"
+									transform="matrix(1.0,0,0,-1.0,-26.5,816)"
+									style="display:inline;text-rendering:optimizeLegibility">
+										<path d="m 68.96685,781.12805 c 0,-0.9581 -0.808499,-1.7275 -1.7995,-1.7275 h -8.8857 -12.0677 c -0.9907,0 -1.7991,0.7694 -1.7991,1.7275 v 11.8029 c 0,0.955 0.8084,1.7302 1.7991,1.7302 h 12.0677 8.8857 c 0.991,0 1.7995,-0.7752 1.7995,-1.7302 z m -7.7083,-5.7895 0.7997,1.76 c 0.2035,0.4374 0.7599,0.7994 1.2449,0.7994 h 4.8223 c 0.481901,0 0.8771,-0.3949 0.8771,-0.8802 v -1.5981 c 0,-0.4851 -0.395199,-0.8799 -0.880199,-0.8799 H 61.77075 c -0.4827,0 -0.7126,0.362 -0.5122,0.7988 z m -9.6267,-0.7988 h -6.3519 c -0.4833,0 -0.8787,0.3948 -0.8787,0.8799 v 1.5981 c 0,0.4853 0.394,0.8802 0.8773,0.8802 h 4.8237 c 0.4853,0 1.042,-0.362 1.2424,-0.7994 l 0.7994,-1.76 c 0.2018,-0.4368 -0.0286,-0.7988 -0.5122,-0.7988 z m -7.2528,23.8895 c 0,0.4853 0.3963,0.8805 0.8802,0.8805 h 6.9625 1.7572 5.1738 1.7614 7.1725 c 0.4819,0 0.8742,-0.3952 0.8742,-0.8805 v -0.9694 c 0,-0.4822 -0.3923,-0.8773 -0.8742,-0.8773 h -7.1725 -1.7614 -5.1738 -1.7572 -6.9625 c -0.4839,0 -0.8802,0.3951 -0.8802,0.8773 z m 24.5577,3.2661 h -5.1247 -14.2424 -5.1279 c -1.5219,0 -2.7567,-1.1973 -2.7567,-2.6762 v -23.6985 c 0,-1.4697 1.2348,-2.6671 2.7567,-2.6671 h 1.0806 c -0.0822,-0.165 -0.1285,-0.3504 -0.1285,-0.5386 v -1.2812 c 0,-0.7183 0.6316,-1.302 1.4128,-1.302 h 0.6792 c 0.7844,0 1.4148,0.5837 1.4148,1.302 v 1.2812 c 0,0.1882 -0.0465,0.3736 -0.127,0.5386 h 15.8346 c -0.0839,-0.165 -0.1256,-0.3504 -0.1256,-0.5386 v -1.2812 c 0,-0.7183 0.6288,-1.302 1.4069,-1.302 h 0.6885 c 0.772201,0 1.409701,0.5837 1.409701,1.302 v 1.2812 c 0,0.1882 -0.0479,0.3736 -0.129,0.5386 h 1.078 c 1.526499,0 2.759799,1.1974 2.759799,2.6671 v 23.6985 c 0,1.4789 -1.2333,2.6762 -2.759799,2.6762"
+											  style="display:inline;fill:#@Data.departures[i].route.textColor;fill-opacity:1;fill-rule:nonzero;stroke:none;text-rendering:optimizeLegibility"
+										id="path8634-7-2-4-4-1-2-4-8-61-4-9-0-4-1" />
+									</g>
+								}
+								else if (Data.departures[i].route.routeType.IsTRAM)
+								{
+									<g id="g9363-9-7-0-9-5-3-7-7-8-6-2-2-2-5"
+									transform="matrix(1.0,0,0,-1.0,-26.5,816)"
+									style="display:inline;text-rendering:optimizeLegibility">
+										<g id="g1726-0-8"
+										transform="matrix(9.7280761,0,0,-9.7280761,-2828.8604,3679.6641)"
+										style="display:inline;text-rendering:optimizeLegibility">
+											<g id="g484"
+											transform="translate(-1.2394624,3.7183872)">
+												<path d="m 297.08019,295.32073 h 0.22871 l -0.28968,0.56442 h -0.397 z"
+													  style="fill:#@Data.departures[i].route.textColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.412767;text-rendering:optimizeLegibility"
+												id="path7001-6-7-9-2-6-3-4-7-7-7-3-3-0" />
+												<path d="m 298.64065,295.32073 h -0.22999 l 0.29075,0.56442 h 0.39721 z"
+													  style="fill:#@Data.departures[i].route.textColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.412767;text-rendering:optimizeLegibility"
+												id="path7003-1-2-1-8-1-8-2-0-2-8-2-1-4" />
+												<path d="m 298.80881,293.87316 c 0,0.062 -0.0489,0.11066 -0.10847,0.11066 h -1.68017 c -0.0596,0 -0.10848,-0.0487 -0.10848,-0.11066 v -0.7505 c 0,-0.0606 0.0489,-0.10951 0.10848,-0.10951 h 1.68017 c 0.0596,0 0.10847,0.0489 0.10847,0.10951 z m -0.23391,0.68705 c -0.0786,0 -0.14133,-0.0678 -0.14133,-0.15331 0,-0.0836 0.0627,-0.15243 0.14133,-0.15243 0.0785,0 0.14216,0.0688 0.14216,0.15243 0,0.0855 -0.0636,0.15331 -0.14216,0.15331 z m -0.1143,0.30255 c -0.35139,0.0747 -0.85612,0.0747 -1.20643,0 -0.12647,-0.0268 -0.22104,-0.0915 -0.21002,-0.12845 l 0.006,-0.005 c 0.0141,-0.0339 0.10662,-0.0599 0.21918,-0.0599 h 1.17544 c 0.11252,0 0.2051,0.026 0.21876,0.0599 l 0.006,0.005 c 0.011,0.0369 -0.0825,0.10167 -0.20886,0.12845 z m -1.46408,-0.45586 c 0,-0.0836 0.0637,-0.15243 0.14216,-0.15243 0.0787,0 0.1424,0.0688 0.1424,0.15243 0,0.0855 -0.0636,0.15331 -0.1424,0.15331 -0.0785,0 -0.14216,-0.0678 -0.14216,-0.15331 z m 0.34012,-1.72499 h 1.02944 c 0.0496,0 0.0904,0.0407 0.0904,0.0904 0,0.0487 -0.0409,0.0897 -0.0904,0.0897 h -1.02944 c -0.0497,0 -0.0904,-0.041 -0.0904,-0.0897 0,-0.0497 0.0407,-0.0904 0.0904,-0.0904 z m 0.15247,-0.53986 -0.13059,-0.3144 h 0.93768 l -0.13044,0.3144 z m 1.22213,0.38437 h -0.79215 v -0.22405 h 0.34425 l 0.20614,-0.47472 h 0.18112 v -0.16028 h -1.62424 v 0.16028 h 0.16016 l 0.20382,0.47472 h 0.3686 v 0.22405 h -0.73258 c -0.17914,0 -0.32456,0.1644 -0.32456,0.36645 v 1.95409 c 0,0.20209 0.14542,0.36728 0.32456,0.36728 h 1.68488 c 0.17914,0 0.32431,-0.16519 0.32431,-0.36728 v -1.95409 c 0,-0.20205 -0.14517,-0.36645 -0.32431,-0.36645"
+													  style="fill:#@Data.departures[i].route.textColor;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.412767;text-rendering:optimizeLegibility"
+												id="path7005-4-6-9-7-9-9-6-1-8-6-3-6-9" />
+											</g>
+										</g>
+									</g>
+								}
+								else if (Data.departures[i].route.routeType.IsTROLLEYBUS)
+								{
+									<g id="g9363-9-7-0-9-5-3-7-7-8-6-2-2-2-5"
+									transform="matrix(1.0,0,0,-1.0,-26.5,816)"
+									style="display:inline;text-rendering:optimizeLegibility">
+										<g id="g11642-8-6-1-0-2"
+										transform="matrix(0.99999807,0,0,0.99999807,0.00145506,-0.08322588)"
+										style="display:inline;text-rendering:optimizeLegibility">
+											<g id="g529">
+												<path d="m 68.9374,770.6234 c 0,-0.4913 -0.3948,-0.8768 -0.8761,-0.8768 h -6.3462 c -0.4836,0 -0.7132,0.3583 -0.5208,0.79 l 0.8099,1.766 c 0.1925,0.4346 0.7532,0.8 1.2345,0.8 h 4.8226 c 0.4813,0 0.8761,-0.3955 0.8761,-0.8867 z m -10.9352,5.4791 v 13.7627 h 9.1035 c 0.9947,0 1.8045,-0.7704 1.8045,-1.726 v -10.311 c 0,-0.9533 -0.8098,-1.7257 -1.8045,-1.7257 z m -6.4349,-6.3559 H 45.222 c -0.4817,0 -0.8771,0.3855 -0.8771,0.8768 v 1.5925 c 0,0.4912 0.3954,0.8867 0.8771,0.8867 h 4.8223 c 0.4816,0 1.0414,-0.3654 1.2444,-0.8 l 0.7999,-1.766 c 0.2024,-0.4317 -0.0272,-0.79 -0.5213,-0.79 z m 3.82,20.1186 v -13.7627 h -9.2296 c -0.9924,0 -1.8051,0.7724 -1.8051,1.7257 v 10.311 c 0,0.9556 0.8127,1.726 1.8051,1.726 z m -11.0719,3.7727 c 0,0.4813 0.4054,0.8767 0.887,0.8767 h 22.8189 c 0.4941,0 0.879,-0.3954 0.879,-0.8767 v -0.9752 c 0,-0.4816 -0.3849,-0.877 -0.879,-0.877 H 45.2024 c -0.4816,0 -0.887,0.3954 -0.887,0.877 z m 24.5554,3.2592 h -7.7556 l 10.5135,10.5135 c 0.2888,0.2987 0.0396,0.7137 -0.2591,1.002 -0.2892,0.2991 -0.7727,0.3586 -1.0619,0.0595 L 58.686,796.8971 h -5.8346 l 12.4024,12.3849 c 0.2988,0.2988 0.0391,0.7137 -0.2596,1.0128 -0.2883,0.2883 -0.7628,0.345 -1.0619,0.0567 L 50.4193,796.8971 H 44.382 c -1.523,0 -2.7575,-1.1953 -2.7575,-2.6813 V 770.527 c 0,-1.474 1.2345,-2.6717 2.7575,-2.6717 h 1.082 c -0.0791,-0.163 -0.1258,-0.3554 -0.1258,-0.5383 v -1.2835 c 0,-0.7138 0.627,-1.3019 1.4065,-1.3019 h 0.6869 c 0.7803,0 1.4074,0.5881 1.4074,1.3019 v 1.2835 c 0,0.1829 -0.0392,0.3753 -0.1259,0.5383 h 15.8366 c -0.0862,-0.163 -0.1358,-0.3554 -0.1358,-0.5383 v -1.2835 c 0,-0.7138 0.637,-1.3019 1.4202,-1.3019 h 0.6837 c 0.7707,0 1.4077,0.5881 1.4077,1.3019 v 1.2835 c 0,0.1829 -0.0471,0.3753 -0.1239,0.5383 h 1.0692 c 1.5336,0 2.7683,1.1977 2.7683,2.6717 v 23.6888 c 0,1.486 -1.2347,2.6813 -2.7683,2.6813"
+													  style="fill:#@Data.departures[i].route.textColor;fill-opacity:1;fill-rule:nonzero;stroke:none"
+												id="path9689-9-5-3-5-6" />
+											</g>
+										</g>
+									</g>
+								}
+							</svg>
+							<svg width="120" height="60" style="position:relative; top:8%">
+								<rect style="fill:#@Data.departures[i].route.color;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-opacity:1"
+								id="rect340"
+								width="120"
+								height="60"
+								x="0"
+								y="0"
+								rx="6.5" />
+								<text xml:space="preserve"
+									  style="font-weight:bold;font-size:85%;line-height:1;font-family:'Frutiger Next Pro';font-weight:bold;dominant-baseline:middle;letter-spacing:-1px;text-anchor:middle;fill:#@Data.departures[i].route.textColor;fill-opacity:1;stroke-width:2;stroke-linejoin:round"
+								x="59"
+								y="32.5"
+									  id="text394">@Data.departures[i].route.routeName</text>
+							</svg>
+						</td>
+						<td class="middle-col" style="font-size: @fontSize%">
+							@Data.departures[i].route.destination
+						</td>
+						<td class="middle-right-col">
+							@if (Data.departures[i].timeUntilDeparture.ToString() == "MOST")
+							{
+								<svg width="122.5" height="60" style="position:relative; top:8%">
+									<rect style="fill:@departsColor1;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-opacity:1"
+									id="rect340"
+									width="60"
+									height="60"
+									x="0"
+									y="0"
+									rx="100" />
+									<rect style="fill:@departsColor2;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-opacity:1"
+									id="rect340"
+									width="60"
+									height="60"
+									x="62.5"
+									y="0"
+									rx="100" />
+								</svg>
+							}
+							else
+							{
+								@Data.departures[i].timeUntilDeparture.ToString()
+							}
+						</td>
+						<td class="right-col">
+							@if (Data.departures[i].exit != "-")
+							{
+								<svg width="122.5" height="60" style="position:relative; top:8%">
+									<rect style="fill:#EE741D;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-opacity:1"
+									id="rect340"
+									width="60"
+									height="60"
+									x="0"
+									y="0"
+									rx="100" />
+									<text xml:space="preserve"
+									style="font-weight:bold;font-size:75%;line-height:1;font-family:'Frutiger Next Pro';font-weight:bold;dominant-baseline:middle;letter-spacing:-1px;text-anchor:middle;fill:white;fill-opacity:1;stroke-width:2;stroke-linejoin:round"
+									x="29.5"
+									y="32.5"
+									id="text394">@Data.departures[i].exit</text>
+								</svg>
+							}
+						</td>
+					</tr>
+					shown++;
+				}
+				else
+				{
+					limit++;
+				}
+			}
+		}
+	}
+</table>
+
+@code {
+	private void NavigateToPage()
+	{
+		NavigationManager.NavigateTo("/OldStyle");
+	}
+	private bool showDropdown = false;
+
+	private string departsColor1 = "darkgreen";
+	private string departsColor2 = "lightgreen";
+
+	private void OnSelect(ChangeEventArgs e)
+	{
+		// Handle the selected value
+		Data.index = int.Parse(e.Value.ToString());
+		showDropdown = false;
+		Data.RefreshDepartures();
+		InvokeAsync(StateHasChanged);
+	}
+
+	private System.Timers.Timer timer;
+	private System.Timers.Timer colorTimer;
+
+	protected override void OnInitialized()
+	{
+		timer = new System.Timers.Timer();
+		timer.Interval = 15000; // 15s
+		timer.AutoReset = true;
+		timer.Elapsed += (sender, args) =>
+		{
+			Data.RefreshDepartures();
+			RefreshData(sender, args);
+		};
+		timer.Start();
+
+		colorTimer = new System.Timers.Timer();
+		colorTimer.Interval = 500; // 0.5s
+		colorTimer.AutoReset = true;
+		colorTimer.Elapsed += (sender, args) =>
+		{
+			string temp = departsColor1;
+			departsColor1 = departsColor2;
+			departsColor2 = temp;
+
+			RefreshData(sender, args);
+		};
+		colorTimer.Start();
+	}
+
+	private void RefreshData(object source, System.Timers.ElapsedEventArgs e)
+	{
+		// Code to refresh the data from the API.
+		// ...
+		InvokeAsync(StateHasChanged);
+	}
+}
