@@ -1,0 +1,259 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "BlazorUI/1.0.0": {
+        "dependencies": {
+          "BKK_API_manager": "1.0.0"
+        },
+        "runtime": {
+          "BlazorUI.dll": {}
+        }
+      },
+      "FSharp.Core/7.0.200": {
+        "runtime": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.23.6902"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.1/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.1/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.1/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.1/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.1/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.1/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.1/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.1/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.1/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.1/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "FSharp.Data/6.2.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200",
+          "FSharp.Data.Csv.Core": "6.2.0",
+          "FSharp.Data.Html.Core": "6.2.0",
+          "FSharp.Data.Http": "6.2.0",
+          "FSharp.Data.Json.Core": "6.2.0",
+          "FSharp.Data.Runtime.Utilities": "6.2.0",
+          "FSharp.Data.WorldBank.Core": "6.2.0",
+          "FSharp.Data.Xml.Core": "6.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Data.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
+        }
+      },
+      "FSharp.Data.Csv.Core/6.2.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200",
+          "FSharp.Data.Runtime.Utilities": "6.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Data.Csv.Core.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
+        }
+      },
+      "FSharp.Data.Html.Core/6.2.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200",
+          "FSharp.Data.Csv.Core": "6.2.0",
+          "FSharp.Data.Runtime.Utilities": "6.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Data.Html.Core.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
+        }
+      },
+      "FSharp.Data.Http/6.2.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Data.Http.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
+        }
+      },
+      "FSharp.Data.Json.Core/6.2.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200",
+          "FSharp.Data.Http": "6.2.0",
+          "FSharp.Data.Runtime.Utilities": "6.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Data.Json.Core.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
+        }
+      },
+      "FSharp.Data.Runtime.Utilities/6.2.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200",
+          "FSharp.Data.Http": "6.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Data.Runtime.Utilities.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
+        }
+      },
+      "FSharp.Data.WorldBank.Core/6.2.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200",
+          "FSharp.Data.Http": "6.2.0",
+          "FSharp.Data.Json.Core": "6.2.0",
+          "FSharp.Data.Runtime.Utilities": "6.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Data.WorldBank.Core.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
+        }
+      },
+      "FSharp.Data.Xml.Core/6.2.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200",
+          "FSharp.Data.Http": "6.2.0",
+          "FSharp.Data.Json.Core": "6.2.0",
+          "FSharp.Data.Runtime.Utilities": "6.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Data.Xml.Core.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
+        }
+      },
+      "BKK_API_manager/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "7.0.200",
+          "FSharp.Data": "6.2.0"
+        },
+        "runtime": {
+          "BKK_API_manager.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlazorUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FSharp.Core/7.0.200": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NmgUnpNH6Zu9B0SPIhojyo38gnPdkdYFYQfbd6zosEH32kbGY/g/Klk7PfOWe1NAe/O1YOMmK9KhwQ2OWsWEbg==",
+      "path": "fsharp.core/7.0.200",
+      "hashPath": "fsharp.core.7.0.200.nupkg.sha512"
+    },
+    "FSharp.Data/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VKdkVWWhxvCdSXFcDJzpUnp0f+EbkAqSEdL2C2h5/r/SgLQYk4IGbht6Uo34LfKtOg/vLG+6atFwRjqLVzXybg==",
+      "path": "fsharp.data/6.2.0",
+      "hashPath": "fsharp.data.6.2.0.nupkg.sha512"
+    },
+    "FSharp.Data.Csv.Core/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I4xl9ffi+yhhhWloyzPYND+fBOeTn8T+FGZbIwxNAo/1iyaSvhSvvJuoI4gj3NJ42YVWVpUpQ4R4xs8wYM4sTQ==",
+      "path": "fsharp.data.csv.core/6.2.0",
+      "hashPath": "fsharp.data.csv.core.6.2.0.nupkg.sha512"
+    },
+    "FSharp.Data.Html.Core/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jQ7749wBt5Vu2K9uCK8Gf5WuaNeEo61jXVEd7ShGE5FA6ImepzB64S1t0FosSI63dU05QVCs0/zRzbKhl5QWLQ==",
+      "path": "fsharp.data.html.core/6.2.0",
+      "hashPath": "fsharp.data.html.core.6.2.0.nupkg.sha512"
+    },
+    "FSharp.Data.Http/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q2gQbsYz1KeMT6JnUznPaKAjAJKsWioIib9bl2b0Xk5ICO3triIS95valXak/CPbVeX4OOcPLGrrRf+5HhLBXA==",
+      "path": "fsharp.data.http/6.2.0",
+      "hashPath": "fsharp.data.http.6.2.0.nupkg.sha512"
+    },
+    "FSharp.Data.Json.Core/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3O9zwQtAgfmlkI7ONgjOTJ4au/TSxrSvI9/4uccjS/XJTAERKMPsyahYbdmUIFnE2nCtLc2G1mL8L9kRO1Wuuw==",
+      "path": "fsharp.data.json.core/6.2.0",
+      "hashPath": "fsharp.data.json.core.6.2.0.nupkg.sha512"
+    },
+    "FSharp.Data.Runtime.Utilities/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DlsZK7HgOd6PxB0COs+QrNWAq4odYENUUTCUn7a9WSpK1ErRIF12FmsBtBlcU2DMDWxp5fbuGxmCVfEeynAgWw==",
+      "path": "fsharp.data.runtime.utilities/6.2.0",
+      "hashPath": "fsharp.data.runtime.utilities.6.2.0.nupkg.sha512"
+    },
+    "FSharp.Data.WorldBank.Core/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-smzGuL/jMRWMxrv5p2KLJC7+c7ILqo+mJsQtifFw4XKFmeRMbVnh2ycY+Eis7QdghqCMhNWm6LDkphdqj7oHzg==",
+      "path": "fsharp.data.worldbank.core/6.2.0",
+      "hashPath": "fsharp.data.worldbank.core.6.2.0.nupkg.sha512"
+    },
+    "FSharp.Data.Xml.Core/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iVRMoKkcdk2fXpUJGUvZQTQYmuhuM7nAjL48ZHjLCWL8W0NFUxQEVlVwbEKltS46SUF5bE8dkVeeaW5bgfw9BA==",
+      "path": "fsharp.data.xml.core/6.2.0",
+      "hashPath": "fsharp.data.xml.core.6.2.0.nupkg.sha512"
+    },
+    "BKK_API_manager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
