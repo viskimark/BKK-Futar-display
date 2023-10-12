@@ -1,0 +1,3 @@
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\bin\Release\net7.0\publish\JsonStructures.dll
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\bin\Release\net7.0\publish\JsonStructures.deps.json
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\bin\Release\net7.0\publish\JsonStructures.pdb

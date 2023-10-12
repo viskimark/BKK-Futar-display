@@ -10,6 +10,9 @@ C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\p
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\FSharp.Data.Runtime.Utilities.dll
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\FSharp.Data.WorldBank.Core.dll
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\FSharp.Data.Xml.Core.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\System.Net.Http.Formatting.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\Newtonsoft.Json.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\Newtonsoft.Json.Bson.dll
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\cs\FSharp.Core.resources.dll
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\de\FSharp.Core.resources.dll
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\es\FSharp.Core.resources.dll
@@ -23,4 +26,6 @@ C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\p
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\tr\FSharp.Core.resources.dll
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\zh-Hans\FSharp.Core.resources.dll
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\zh-Hant\FSharp.Core.resources.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\JsonStructures.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\JsonStructures.pdb
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Release\net7.0\publish\BKK_API_manager.xml

@@ -69,14 +69,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\data\\fiktiv.json",
-      "PackagePath": "staticwebassets\\data\\fiktiv.json"
-    },
-    {
-      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\data\\megallok.json",
-      "PackagePath": "staticwebassets\\data\\megallok.json"
-    },
-    {
       "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

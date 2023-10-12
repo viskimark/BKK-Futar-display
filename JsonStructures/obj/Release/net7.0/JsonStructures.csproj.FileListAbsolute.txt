@@ -1,0 +1,12 @@
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\bin\Release\net7.0\JsonStructures.deps.json
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\bin\Release\net7.0\JsonStructures.dll
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\bin\Release\net7.0\JsonStructures.pdb
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\JsonStructures.csproj.AssemblyReference.cache
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\JsonStructures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\JsonStructures.AssemblyInfoInputs.cache
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\JsonStructures.AssemblyInfo.cs
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\JsonStructures.csproj.CoreCompileInputs.cache
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\JsonStructures.dll
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\refint\JsonStructures.dll
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\JsonStructures.pdb
+C:\Users\1visk\source\repos\BKK_API_manager\JsonStructures\obj\Release\net7.0\ref\JsonStructures.dll

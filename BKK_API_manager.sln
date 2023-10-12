@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWASM", "BlazorWASM\Bl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSTester", "CSTester\CSTester.csproj", "{31A178F2-F77C-4162-A8C1-CF0F4DF782E0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp-empty1", "BlazorApp-empty1\BlazorApp-empty1.csproj", "{FC58D6DE-EE9B-4EB6-AE7C-ACC91B996B1D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonStructures", "JsonStructures\JsonStructures.csproj", "{C88433B1-C832-4D30-A17B-0FC446467BA3}"
 EndProject
 Global
