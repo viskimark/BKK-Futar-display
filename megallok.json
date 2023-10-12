@@ -95,30 +95,29 @@
 			"F01640"
 		],
 		"exits": [
-			//"D2",
-			//"D3",
-			//"A1",
-			//"A2",
-			//"A3",
-			//"A4",
-			//"A5",
-			//"A6",
-			//"A7",
-			//"A8",
-			//"B1",
-			//"B7",
-			//"B5",
-			//"C3",
-			//"C1",
-			//"C2",
-			//"D4"
+			"D2",
+			"D3",
+			"A1",
+			"A2",
+			"A3",
+			"A4",
+			"A5",
+			"A6",
+			"A7",
+			"A8",
+			"B1",
+			"B7",
+			"B5",
+			"C3",
+			"C1",
+			"C2",
+			"D4"
 		]
 	},
 	{
 		"longName": "Örs vezér tere M+H (összes)",
 		"shortName": "Örs vezér tere M+H",
 		"ids": [
-			//A kijárat - kivéve #008222 (villamos Kőbánya felé)
 			"F01757",
 			"F01756",
 			"F01755",
@@ -128,17 +127,14 @@
 			"F02757",
 			"F02758",
 			"102825",
-			//B kijárat - kivéve #F02763 (44), #F02760 (45)
 			"F01754",
 			"F02762",
 			"F02761",
 			"F02759",
-			//C kijárat - kivéve #008382 (villamos Zugló felé)
 			"008383",
 			"F01753",
 			"008942",
 			"009322",
-			//D kijárat - kivéve #008028 (176E, 276E), #008029 (67)
 			"008164",
 			"008165",
 			"008021",
@@ -152,11 +148,9 @@
 			"008030",
 			"F01752",
 			"F01751",
-			//E kijárat
 			"009318"
 		],
 		"exits": [
-			//A kijárat - kivéve #008222 (villamos Kőbánya felé)
 			"A",
 			"A",
 			"A",
@@ -166,17 +160,14 @@
 			"A",
 			"A",
 			"A",
-			//B kijárat - kivéve #F02763 (44), #F02760 (45)
 			"B",
 			"B",
 			"B",
 			"B",
-			//C kijárat - kivéve #008382 (villamos Zugló felé)
 			"C",
 			"C",
 			"C",
 			"C",
-			//D kijárat - kivéve #008028 (176E, 276E), #008029 (67)
 			"D",
 			"D",
 			"D",
@@ -190,7 +181,6 @@
 			"D",
 			"D",
 			"D",
-			//E kijárat
 			"E"
 		]
 	},
@@ -379,20 +369,16 @@
 		"longName": "Bosnyák tér (összes)",
 		"shortName": "Bosnyák tér",
 		"ids": [
-			//Nagy Lajos kir. útja
 			"F02837",
 			"F02830",
-			"F02834", //907 Örs felé
+			"F02834",
 			"F02831",
 			"F02832",
 			"043191",
-			//Csömöri út belváros felé
 			"F02829",
 			"F02828",
 			"F02827",
 			"F02826",
-			//Csömöri út Újpalota felé
-			//"F02836", //110, 112 induló
 			"F02840",
 			"F02835"
 		],
@@ -402,10 +388,8 @@
 		"longName": "Svábhegy",
 		"shortName": "Svábhegy",
 		"ids": [
-			//Fogas
 			"F02317",
 			"F02316",
-			//Buszok
 			"F02442",
 			"F02459",
 			"099678",
@@ -417,16 +401,12 @@
 		"longName": "Clark Ádám tér",
 		"shortName": "Clark Ádám tér",
 		"ids": [
-			//Villamos
 			"009675",
 			"009676",
-			//Lánchíd utca
 			"F00050",
 			"F00049",
-			//Alagút
 			"F00048",
 			"F00047",
-			//Fő utca
 			"049784",
 			"049785"
 		],
@@ -436,13 +416,10 @@
 		"longName": "Pestszentimre, vá. (összes)",
 		"shortName": "Pestszentimre, vasútállomás",
 		"ids": [
-			//Nagykőrösi út
 			"008950",
 			"008949",
-			//Nemes utca
 			"009234",
 			"F03665",
-			//Dózsa György utca
 			"F03672",
 			"F03668"
 		],
