@@ -28,13 +28,17 @@
     }
 
 @font-face {
-    font-family: 'Frutiger Next Pro';
-    src: url("css/FrutigerNextPro-Regular.otf") format("opentype");
+    font-family: 'FrutigerLocal';
+    src: url('/css/FrutigerNextPro-Regular.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Frutiger Next Pro';
+    font-family: 'FrutigerLocal';
 	font-weight: bold;
-    src: url("css/FrutigerNextPro-Bold.otf") format("opentype");
+    src: url('/css/FrutigerNextPro-Bold.otf') format('opentype');
+}
+
+a {
+	color: #5B2C6F;
 }
 
 #mainTable {
@@ -47,7 +51,7 @@
     border: 0px solid;
     width: 100%;
     height: 100%;
-    font-family: 'Frutiger Next Pro';
+    font-family: 'FrutigerLocal';
     font-weight: bold;
     font-size: 245%;
     color: white;

@@ -212,7 +212,7 @@
       "System.Private.CoreLib.dll": "sha256-mcywrbK0VZXiOvZ4dxU1ocaPZFplCRSIPQ\/wFikcrus=",
       "BKK_API_manager.dll": "sha256-+Xeyox01WSPSLbsWHdPu\/Q7IYngfVksHu+zy0M\/nx\/M=",
       "JsonStructures.dll": "sha256-qXo9aDsd1jZQYrZm85rpgrkw9uAq8cboeVTWxy2GiUI=",
-      "BlazorWASM.dll": "sha256-oYFCKDcc+8m\/QyPhX0HlLqELsUdon5HiWXYLBnu+v4o="
+      "BlazorWASM.dll": "sha256-3i8pS82\/GsuUTfeuX8TJx6qcOnepsq\/f25vHJHMI2Pk="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -220,7 +220,7 @@
     "pdb": {
       "BKK_API_manager.pdb": "sha256-gHOYnLqy8Go9vCJ7r2gsX3fhMYLgJcU9XzqZuEfTBCs=",
       "JsonStructures.pdb": "sha256-ftQBUJT7kifVzaI\/2c6ZZLyvaeo8xkUE1hKONJHO0P8=",
-      "BlazorWASM.pdb": "sha256-I6iWa7HjA2rsCbVyEVyiLO4e1MmaDjpbkaDkmXgnlGU="
+      "BlazorWASM.pdb": "sha256-Z9HV+dtONG1T\/9iNvCVG8OiuWbwGK9jfIbGIsMl9E+s="
     },
     "runtime": {
       "dotnet.7.0.3.yx5vj9dx9n.js": "sha256-DxGvmbtUa6hGJpk3VyMEbkPZ653qWbQkh8X4ZVM9TWM=",
