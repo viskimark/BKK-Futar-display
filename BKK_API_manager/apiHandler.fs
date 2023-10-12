@@ -4,8 +4,8 @@ open FSharp.Data
 open System.IO
 
 type apiHandler(key:string, stops:JsonStructures.Stop[]) =
-    //let mutable private stopId = "stopId=BKK_F01703&stopId=BKK_F01701&"
-    //let megallokJson = Http.RequestString(@"https://raw.githubusercontent.com/viskimark/BKK-Futar-display/23f5fe94527f9ec695f9a165a2576538f6ba99ff/megallok.json", responseEncodingOverride="UTF-8")
+    let Http = new System.Net.Http.HttpClient()
+
     let stopIds (stop:JsonStructures.Stop) =
         let mutable str = ""
         for id in stop.ids do
@@ -19,7 +19,6 @@ type apiHandler(key:string, stops:JsonStructures.Stop[]) =
 
     let getJson (url:string) =
         async {
-            let Http = new System.Net.Http.HttpClient()
             let! text = Http.GetStringAsync(url) |> Async.AwaitTask
             return JsonStructuresFS.StopDepartureStructure.Parse(text)
         }
@@ -76,15 +75,18 @@ type apiHandler(key:string, stops:JsonStructures.Stop[]) =
                     return [||]
         }
         
-    member this.getDeparturesWithFictive(stop:JsonStructures.Stop, fictiveDeparturesPath) =
+    member this.getDeparturesWithFictive(stop:JsonStructures.Stop) =
         async{
+            let! fictiveJson = Http.GetStringAsync(@"https://raw.githubusercontent.com/viskimark/BKK-Futar-display/main/fiktiv.json") |> Async.AwaitTask
+            let fictiveRoutes = System.Text.Json.JsonSerializer.Deserialize<JsonStructures.FictiveRoute[]>(fictiveJson)
+            let fictiveHandler = new FictiveRoutes(fictiveRoutes, this.exits)
+
             let! departures = this.getDepartures(stop)
-            let fictiveDepartures = [||]//FictiveRoutes.getDepartures(stop.Ids)
+            let fictiveDepartures = fictiveHandler.getDepartures(stop.ids)
 
             let combinedDepartures = Array.append (departures) (fictiveDepartures)
             let sort = Array.sortBy (fun (dep:Departure) -> 
                 dep.timeUntilDeparture.time) combinedDepartures
-            //Array.iter (fun (dep:Departure) -> 
-            //    printfn "%s %s" dep.departureAsString dep.route.destination) sort
+
             return sort
         } |> Async.StartAsTask

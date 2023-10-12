@@ -28,7 +28,7 @@ namespace BlazorWASM
 		}
 		public async Task RefreshDepartures()
 		{
-			var _departures = await apiHandler.getDeparturesWithFictive(apiHandler.stops[index], "");
+			var _departures = await apiHandler.getDeparturesWithFictive(apiHandler.stops[index]);
 			departures = _departures;
 		}
 	}

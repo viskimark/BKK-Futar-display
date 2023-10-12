@@ -7,8 +7,8 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "BKK_API_manager.dll": "sha256-DIw23MFqYY3+d7F3kQ6\/6NxARrbhc1a9u23t7Ym96X8=",
-      "BlazorWASM.dll": "sha256-O0ZG\/CwlGCjoshLFDjV6admKDZLHqJfNFRJCvLIc2W8=",
+      "BKK_API_manager.dll": "sha256-fnt239llN3VfNRnKE2x9v4j9Y+wLuZg2CuYxRVns9c0=",
+      "BlazorWASM.dll": "sha256-ezRDoqnRplvDkUGS58L\/zVLeiWE\/oIWyvbWXJCm8pEo=",
       "FSharp.Core.dll": "sha256-l6T3GwxG5qkIdbi6whKwj+V2GlsfeQtfAEPDlU4R0\/o=",
       "FSharp.Data.Csv.Core.dll": "sha256-fTUJ9M3CyULLrvRnxl1Zt8nz0WAVXggJ8\/Zddhl1Ne4=",
       "FSharp.Data.dll": "sha256-48YPzI9yDuW9dlgFcHbssWrSTbh5pVj9Tn+se7svMNw=",
@@ -18,7 +18,7 @@
       "FSharp.Data.Runtime.Utilities.dll": "sha256-LixcYl\/9284pTFPrFaRGc\/wb6fVzAA5PukFwEPTrD\/g=",
       "FSharp.Data.WorldBank.Core.dll": "sha256-+Zqu+mSLUD6EevXaNiYA\/a9uvbutopPdBtzEBvrVtrU=",
       "FSharp.Data.Xml.Core.dll": "sha256-t+xIW8G43PQy4B2jIqu81lw7Gu1hRxeNz8oGKy4rn8o=",
-      "JsonStructures.dll": "sha256-DA3UVhUHjEAZTOwXPH593pB0JvLPBVbyUx\/wATWZerw=",
+      "JsonStructures.dll": "sha256-oBIXL0Yy7cAVaDp2q81q9Y1upGV6vuM1HOQHoMmtrsE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-N1OWGf8pfcHshXFvrPwYqp255l9pzCQuees8Ac1E+5M=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-jSEc6w1lUN8bup\/iXTVCIBk1vB+bHUZ\/WLq59QvXE1g=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-VoOExk2fEE249K3Jayw1Nymq9Bc8LlKEWiOG9\/0GiNY=",
@@ -72,7 +72,7 @@
       "System.Reflection.dll": "sha256-YQY\/ZJMpDNe3iOk+eAYmNDujv5xmxwB84041MUHrifo=",
       "System.Reflection.Extensions.dll": "sha256-kCK4aNpROsc4pgo3uxsrJh7\/kOBw41zqumj3+7Q5qaw=",
       "System.Reflection.Primitives.dll": "sha256-9K+aQffjEp5Wg8FA6kApj6YXBZTs9+OfjhGwuxnAgxQ=",
-      "System.Runtime.dll": "sha256-FIUcDvrwCAi10cok5NttAIVft961F7w\/q9YT2t\/OQLk=",
+      "System.Runtime.dll": "sha256-u22X8gslv6b\/1BVwf2WoLrB0bXuQXCr88UOT1\/SNC3U=",
       "System.Runtime.Extensions.dll": "sha256-ETa\/I57jO6bfOQg4N6EyysamTBPI2josVtBwUMO1yZM=",
       "System.Runtime.InteropServices.JavaScript.dll": "sha256-gTFfeQGBfRAW8nb7IAJyg7MqT5qqYH0kakuHATgUW5A=",
       "System.Runtime.Numerics.dll": "sha256-sLfgIi1mkqd0itXIZ2BGhdpSL2o\/iIFkJ57m7BKSCCo=",

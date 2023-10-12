@@ -7,8 +7,21 @@
 </head>
 @if (!loaded)
 {
-    <input type="text" @bind="@key" />
-	<button @onclick="LoadApi">Load</button>
+	<table id="mainTable">
+		<tr>
+			<td>
+				<h1>Belépés / Login</h1>
+				<p>Kérlek add meg az API kulcsod, amit használni kívánsz.<br />Please enter your API key.</p>
+				<p style="font-style: italic">
+					Ha nincs, <a href="https://opendata.bkk.hu/keys">ezen a weblapon</a> tudsz igényleni.
+					<br>
+					If you don't yet have one, you can get one from <a href="https://opendata.bkk.hu/keys">this website</a>.
+				</p>
+				<input type="text" @bind="@key" />
+				<button @onclick="LoadApi">Enter</button>
+			</td>
+		</tr>
+	</table>
 }
 else
 {
@@ -56,7 +69,6 @@ else
 			</td>
 		</tr>
 		@{
-			//BKK_API_manager.Departure[] departures = BKK_API_manager.apiHandler.getDeparturesWithFictive(BKK_API_manager.apiHandler.stops[index], "fiktiv.json");
 			int limit = 9;
 			bool smallerArray = limit > data.departures.Length ? true : false;
 			int shown = 0;

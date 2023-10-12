@@ -4,17 +4,13 @@ open FSharp.Data
 open System
 open System.IO
 
-type DepartureData(route:JsonStructuresFS.FictiveStructure.Route, destination, headsign, addMinutes) =
+type DepartureData(route:JsonStructures.FictiveRoute, destination, headsign, addMinutes) =
     member this.route = route
     member this.destination = destination
     member this.headsign = headsign
     member this.addMinutes = addMinutes
 
-module FictiveRoutes =
-    let defaultPath = "fiktiv.json"
-    let getJson(path) = JsonStructuresFS.FictiveStructure.Parse(File.ReadAllText(path))
-    let json = getJson(defaultPath)
-
+type FictiveRoutes(routes:JsonStructures.FictiveRoute[], exits) =
     //let stops = 
     //    let stops = JsonStructures.StopsStructure.Parse(File.ReadAllText("megallok.json")).Stops
     //    Array.sortBy (fun (s:JsonStructures.StopsStructure.Stop) -> s.LongName) stops
@@ -28,26 +24,25 @@ module FictiveRoutes =
     //                yield (stop.Ids[i], exit)
     //    |]
 
-    //let getExit(stopId) =
-    //    let arr = 
-    //        [|
-    //            for exit in exits do
-    //                if ("BKK_" + (fst exit)) = stopId then yield (snd exit)
-    //        |]
-    //    if arr.Length > 0 then arr[0] else "-"
+    let getExit(stopId) =
+        let arr = 
+            [|
+                for exit in exits do
+                    if ("BKK_" + (fst exit)) = stopId then yield (snd exit)
+            |]
+        if arr.Length > 0 then arr[0] else "-"
 
     let getRoutesAndDestinationsFromStop(stopId) =
-        //Array.sortBy (fun (departureData:DepartureData) -> departureData.route.RouteName)
-            [|
-            for (route:JsonStructuresFS.FictiveStructure.Route) in json.Routes do
-                for (destination:JsonStructuresFS.FictiveStructure.Destination) in route.Destinations do
-                    for (headsign:JsonStructuresFS.FictiveStructure.Headsign) in destination.Headsigns do
-                        for (stop:JsonStructuresFS.FictiveStructure.Stop) in headsign.Stops do
-                            if stop.StopId = stopId then
-                                yield new DepartureData(route, destination, headsign.Name, stop.Time)
+        [|
+            for route in routes do
+                for destination in route.destinations do
+                    for headsign in destination.headsigns do
+                        for stop in headsign.stops do
+                            if stop.stopId = stopId then
+                                yield new DepartureData(route, destination, headsign.name, stop.time)
         |]
 
-    let getDepartures(stopIds:string array) =
+    member this.getDepartures(stopIds:string array) =
         Array.sortBy (fun (dep:Departure) -> dep.departure) [|
         for stopId in stopIds do
             let routesAndDestinationsFromStop = getRoutesAndDestinationsFromStop(stopId)
@@ -58,11 +53,11 @@ module FictiveRoutes =
                 let departureTimes = 
                     if DateTime.Today.DayOfWeek = DayOfWeek.Sunday || DateTime.Today.DayOfWeek = DayOfWeek.Saturday
                     then
-                        match destination.DepartureTimes.WeekendTimes with
-                        |x when x[0] = "*" -> destination.DepartureTimes.WeekdayTimes
-                        |_ -> destination.DepartureTimes.WeekendTimes
+                        match destination.departureTimes.weekendTimes with
+                        |x when x[0] = "*" -> destination.departureTimes.weekdayTimes
+                        |_ -> destination.departureTimes.weekendTimes
                     else
-                        destination.DepartureTimes.WeekdayTimes
+                        destination.departureTimes.weekdayTimes
 
 
                 for departure in departureTimes do
@@ -70,5 +65,5 @@ module FictiveRoutes =
                     let departureUnix = DateTimeOffset.Parse(departure).AddMinutes(departureData.addMinutes).ToUnixTimeSeconds()
 
                     if departureUnix > (currentTimeUnix / 1000L) && (departureUnix - (currentTimeUnix / 1000L)) / 60L <= 60L then
-                        yield new Departure("", new Route(departureData.headsign, route.RouteId, route.RouteName, route.RouteType, route.Color, route.TextColor), departureUnix, currentTimeUnix, "")//getExit(stopId))
+                        yield new Departure("", new Route(departureData.headsign, route.routeId, route.routeName, route.routeType, route.color, route.textColor), departureUnix, currentTimeUnix, getExit(stopId))
         |]

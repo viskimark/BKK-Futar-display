@@ -27,6 +27,16 @@
         content: "An error has occurred."
     }
 
+@font-face {
+    font-family: 'Frutiger Next Pro';
+    src: url("css/FrutigerNextPro-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Frutiger Next Pro';
+	font-weight: bold;
+    src: url("css/FrutigerNextPro-Bold.otf") format("opentype");
+}
+
 #mainTable {
     position: absolute;
     top: 0;

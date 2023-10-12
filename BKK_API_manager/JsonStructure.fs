@@ -345,37 +345,34 @@ module JsonStructuresFS =
         "class": "entryWithReferences"
       }
     } """>
-    //this is outdated, currently using JsonStructures.Stop
-    //-> will return to this in the future
+    //these are outdated, program uses JsonStructures class library
     type StopsStructure = JsonProvider<Sample=
-    """{
-	    "stops": [
-		    {
-			    "longName": "typeof<string>",
-			    "shortName": "typeof<string>",
-			    "ids": [
-				    "typeof<string>",
-				    "typeof<string>"
-			    ],
-                "exits": [
-				    "typeof<string>",
-				    "typeof<string>"
-			    ]
-		    },
-		    {
-			    "longName": "typeof<string>",
-			    "shortName": "typeof<string>",
-			    "ids": [
-				    "typeof<string>",
-				    "typeof<string>"
-			    ],
-			    "exits": [
-				    "typeof<string>",
-				    "typeof<string>"
-			    ]
-		    }
-        ]
-    }""", InferenceMode=InferenceMode.ValuesAndInlineSchemasOverrides>
+    """[
+		{
+			"longName": "typeof<string>",
+			"shortName": "typeof<string>",
+			"ids": [
+				"typeof<string>",
+				"typeof<string>"
+			],
+            "exits": [
+				"typeof<string>",
+				"typeof<string>"
+			]
+		},
+		{
+			"longName": "typeof<string>",
+			"shortName": "typeof<string>",
+			"ids": [
+				"typeof<string>",
+				"typeof<string>"
+			],
+			"exits": [
+				"typeof<string>",
+				"typeof<string>"
+			]
+		}
+    ]""", InferenceMode=InferenceMode.ValuesAndInlineSchemasOverrides>
 
     type FictiveStructure = JsonProvider<Sample=
     """ {
