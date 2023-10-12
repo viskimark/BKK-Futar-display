@@ -1,453 +1,451 @@
-{
-	[
-		{
-			"longName": "Sírkert út (28, 28A, 37, 95, 195)",
-			"shortName": "Sírkert út",
-			"ids": [
-				"F01710",
-				"F01711",
-				"F01712",
-				"F01713"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Kada utca / Maglódi út",
-			"shortName": "Kada utca / Maglódi út",
-			"ids": [
-				"F01676",
-				"F01677",
-				"F01678",
-				"F01679",
-				"F01680",
-				"009773"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Kőbánya felső vasútállomás",
-			"shortName": "Kőbánya felső vasútállomás",
-			"ids": [
-				"F01555",
-				"F01727",
-				"F01728"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Anilin utca",
-			"shortName": "Anilin utca",
-			"ids": [
-				"F03325",
-				"F03326"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Ónodi utca",
-			"shortName": "Ónodi utca",
-			"ids": [
-				"F01629",
-				"F01826",
-				"F01827",
-				"F01828"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Péterfy Sándor utca",
-			"shortName": "Péterfy Sándor utca",
-			"ids": [
-				"062942"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Bajcsy-Zsilinszky Kórház",
-			"shortName": "Bajcsy-Zsilinszky Kórház",
-			"ids": [
-				"F01836",
-				"F01835",
-				"F01834",
-				"F01833"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Kőbánya alsó vasútállomás",
-			"shortName": "Kőbánya alsó vasútállomás",
-			"ids": [
-				"F01646",
-				"F01645",
-				"038791",
-				"008380",
-				"F01635",
-				"F01636",
-				"008381",
-				"F01800",
-				"F01803",
-				"F01801",
-				"002138",
-				"048277",
-				"008379",
-				"F01571",
-				"F01569",
-				"F01570",
-				"F01640"
-			],
-			"exits": [
-				//"D2",
-				//"D3",
-				//"A1",
-				//"A2",
-				//"A3",
-				//"A4",
-				//"A5",
-				//"A6",
-				//"A7",
-				//"A8",
-				//"B1",
-				//"B7",
-				//"B5",
-				//"C3",
-				//"C1",
-				//"C2",
-				//"D4"
-			]
-		},
-		{
-			"longName": "Örs vezér tere M+H (összes)",
-			"shortName": "Örs vezér tere M+H",
-			"ids": [
-				//A kijárat - kivéve #008222 (villamos Kőbánya felé)
-				"F01757",
-				"F01756",
-				"F01755",
-				"F02764",
-				"F02755",
-				"F02756",
-				"F02757",
-				"F02758",
-				"102825",
-				//B kijárat - kivéve #F02763 (44), #F02760 (45)
-				"F01754",
-				"F02762",
-				"F02761",
-				"F02759",
-				//C kijárat - kivéve #008382 (villamos Zugló felé)
-				"008383",
-				"F01753",
-				"008942",
-				"009322",
-				//D kijárat - kivéve #008028 (176E, 276E), #008029 (67)
-				"008164",
-				"008165",
-				"008021",
-				"008022",
-				"008023",
-				"008024",
-				"008020",
-				"008025",
-				"008026",
-				"008031",
-				"008030",
-				"F01752",
-				"F01751",
-				//E kijárat
-				"009318"
-			],
-			"exits": [
-				//A kijárat - kivéve #008222 (villamos Kőbánya felé)
-				"A",
-				"A",
-				"A",
-				"A",
-				"A",
-				"A",
-				"A",
-				"A",
-				"A",
-				//B kijárat - kivéve #F02763 (44), #F02760 (45)
-				"B",
-				"B",
-				"B",
-				"B",
-				//C kijárat - kivéve #008382 (villamos Zugló felé)
-				"C",
-				"C",
-				"C",
-				"C",
-				//D kijárat - kivéve #008028 (176E, 276E), #008029 (67)
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				"D",
-				//E kijárat
-				"E"
-			]
-		},
-		{
-			"longName": "Lavotta utca",
-			"shortName": "Lavotta utca",
-			"ids": [
-				"F01703",
-				"F01701"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Szlávy utca",
-			"shortName": "Szlávy utca",
-			"ids": [
-				"F01838"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Katinyi Mártírok Parkja",
-			"shortName": "Katinyi Mártírok Parkja",
-			"ids": [
-				"F00598",
-				"F00599",
-				"F00600",
-				"F00601"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Kolosy tér",
-			"shortName": "Kolosy tér",
-			"ids": [
-				"008605",
-				"009693",
-				"F00132",
-				"F00133",
-				"F00135",
-				"F00136",
-				"F00137",
-				"F00138"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Örs vezér tere M+H (volán járatok)",
-			"shortName": "Örs vezér tere M+H",
-			"ids": [
-				"F01751",
-				"F01754",
-				"008942"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Orczy tér (9, 23, 24, 28, 28A, 62, 72, 217E, 909, 909A)",
-			"shortName": "Orczy tér",
-			"ids": [
-				"F01217",
-				"F01220",
-				"F01216",
-				"F01219",
-				"047875",
-				"044301",
-				"F01187",
-				"F01186",
-				"F01218"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Anilin utca (Örs felé)",
-			"shortName": "Anilin utca",
-			"ids": [
-				"F03326"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Rákoskeresztúr, városközpont (összes)",
-			"shortName": "Rákoskeresztúr, városközpont",
-			"ids": [
-				"009684",
-				"011724",
-				"011723",
-				"011722",
-				"011726",
-				"011725",
-				"F03610"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Kada utca (összes)",
-			"shortName": "Kada utca",
-			"ids": [
-				"F01681",
-				"F01682",
-				"F01683",
-				"F01685"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Georgina utca",
-			"shortName": "Georgina utca",
-			"ids": [
-				"F03327",
-				"F03328"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Lehel utca / Róbert Károly körút (összes)",
-			"shortName": "Lehel utca / Róbert Károly körút",
-			"ids": [
-				"F02595",
-				"050249",
-				"F02592",
-				"F02591",
-				"F02598",
-				"F02593",
-				"F02596",
-				"F02594",
-				"F02597"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Tesztelő (Örs leszálló)",
-			"shortName": "Örs vezér tere M+H",
-			"ids": [
-				"F01755"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Tesztelő (Nagytarcsa)",
-			"shortName": "Nagytarcsa, Községháza",
-			"ids": [
-				"607670",
-				"607669"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Rákoscsaba-Újtelep, Tóalmás utca",
-			"shortName": "Rákoscsaba-Újtelep, Tóalmás utca",
-			"ids": [
-				"011768",
-				"F03584"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Batthyány tér M+H (összes)",
-			"shortName": "Batthyány tér M+H",
-			"ids": [
-				"F00065",
-				"F00064",
-				"F00066",
-				"F00057",
-				"008750",
-				"009629",
-				"F00067",
-				"067592",
-				"071927",
-				"F00059"
-			],
-			"exits": [
-				"-",
-				"A",
-				"A",
-				"B",
-				"C",
-				"C",
-				"D",
-				"D",
-				"D",
-				"D"
-			]
-		},
-		{
-			"longName": "Bosnyák tér (összes)",
-			"shortName": "Bosnyák tér",
-			"ids": [
-				//Nagy Lajos kir. útja
-				"F02837",
-				"F02830",
-				"F02834", //907 Örs felé
-				"F02831",
-				"F02832",
-				"043191",
-				//Csömöri út belváros felé
-				"F02829",
-				"F02828",
-				"F02827",
-				"F02826",
-				//Csömöri út Újpalota felé
-				//"F02836", //110, 112 induló
-				"F02840",
-				"F02835"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Svábhegy",
-			"shortName": "Svábhegy",
-			"ids": [
-				//Fogas
-				"F02317",
-				"F02316",
-				//Buszok
-				"F02442",
-				"F02459",
-				"099678",
-				"F02458"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Clark Ádám tér",
-			"shortName": "Clark Ádám tér",
-			"ids": [
-				//Villamos
-				"009675",
-				"009676",
-				//Lánchíd utca
-				"F00050",
-				"F00049",
-				//Alagút
-				"F00048",
-				"F00047",
-				//Fő utca
-				"049784",
-				"049785"
-			],
-			"exits": []
-		},
-		{
-			"longName": "Pestszentimre, vá. (összes)",
-			"shortName": "Pestszentimre, vasútállomás",
-			"ids": [
-				//Nagykőrösi út
-				"008950",
-				"008949",
-				//Nemes utca
-				"009234",
-				"F03665",
-				//Dózsa György utca
-				"F03672",
-				"F03668"
-			],
-			"exits": []
-		}
-	]
-}
+[
+	{
+		"longName": "Sírkert út (28, 28A, 37, 95, 195)",
+		"shortName": "Sírkert út",
+		"ids": [
+			"F01710",
+			"F01711",
+			"F01712",
+			"F01713"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Kada utca / Maglódi út",
+		"shortName": "Kada utca / Maglódi út",
+		"ids": [
+			"F01676",
+			"F01677",
+			"F01678",
+			"F01679",
+			"F01680",
+			"009773"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Kőbánya felső vasútállomás",
+		"shortName": "Kőbánya felső vasútállomás",
+		"ids": [
+			"F01555",
+			"F01727",
+			"F01728"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Anilin utca",
+		"shortName": "Anilin utca",
+		"ids": [
+			"F03325",
+			"F03326"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Ónodi utca",
+		"shortName": "Ónodi utca",
+		"ids": [
+			"F01629",
+			"F01826",
+			"F01827",
+			"F01828"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Péterfy Sándor utca",
+		"shortName": "Péterfy Sándor utca",
+		"ids": [
+			"062942"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Bajcsy-Zsilinszky Kórház",
+		"shortName": "Bajcsy-Zsilinszky Kórház",
+		"ids": [
+			"F01836",
+			"F01835",
+			"F01834",
+			"F01833"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Kőbánya alsó vasútállomás",
+		"shortName": "Kőbánya alsó vasútállomás",
+		"ids": [
+			"F01646",
+			"F01645",
+			"038791",
+			"008380",
+			"F01635",
+			"F01636",
+			"008381",
+			"F01800",
+			"F01803",
+			"F01801",
+			"002138",
+			"048277",
+			"008379",
+			"F01571",
+			"F01569",
+			"F01570",
+			"F01640"
+		],
+		"exits": [
+			//"D2",
+			//"D3",
+			//"A1",
+			//"A2",
+			//"A3",
+			//"A4",
+			//"A5",
+			//"A6",
+			//"A7",
+			//"A8",
+			//"B1",
+			//"B7",
+			//"B5",
+			//"C3",
+			//"C1",
+			//"C2",
+			//"D4"
+		]
+	},
+	{
+		"longName": "Örs vezér tere M+H (összes)",
+		"shortName": "Örs vezér tere M+H",
+		"ids": [
+			//A kijárat - kivéve #008222 (villamos Kőbánya felé)
+			"F01757",
+			"F01756",
+			"F01755",
+			"F02764",
+			"F02755",
+			"F02756",
+			"F02757",
+			"F02758",
+			"102825",
+			//B kijárat - kivéve #F02763 (44), #F02760 (45)
+			"F01754",
+			"F02762",
+			"F02761",
+			"F02759",
+			//C kijárat - kivéve #008382 (villamos Zugló felé)
+			"008383",
+			"F01753",
+			"008942",
+			"009322",
+			//D kijárat - kivéve #008028 (176E, 276E), #008029 (67)
+			"008164",
+			"008165",
+			"008021",
+			"008022",
+			"008023",
+			"008024",
+			"008020",
+			"008025",
+			"008026",
+			"008031",
+			"008030",
+			"F01752",
+			"F01751",
+			//E kijárat
+			"009318"
+		],
+		"exits": [
+			//A kijárat - kivéve #008222 (villamos Kőbánya felé)
+			"A",
+			"A",
+			"A",
+			"A",
+			"A",
+			"A",
+			"A",
+			"A",
+			"A",
+			//B kijárat - kivéve #F02763 (44), #F02760 (45)
+			"B",
+			"B",
+			"B",
+			"B",
+			//C kijárat - kivéve #008382 (villamos Zugló felé)
+			"C",
+			"C",
+			"C",
+			"C",
+			//D kijárat - kivéve #008028 (176E, 276E), #008029 (67)
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			"D",
+			//E kijárat
+			"E"
+		]
+	},
+	{
+		"longName": "Lavotta utca",
+		"shortName": "Lavotta utca",
+		"ids": [
+			"F01703",
+			"F01701"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Szlávy utca",
+		"shortName": "Szlávy utca",
+		"ids": [
+			"F01838"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Katinyi Mártírok Parkja",
+		"shortName": "Katinyi Mártírok Parkja",
+		"ids": [
+			"F00598",
+			"F00599",
+			"F00600",
+			"F00601"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Kolosy tér",
+		"shortName": "Kolosy tér",
+		"ids": [
+			"008605",
+			"009693",
+			"F00132",
+			"F00133",
+			"F00135",
+			"F00136",
+			"F00137",
+			"F00138"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Örs vezér tere M+H (volán járatok)",
+		"shortName": "Örs vezér tere M+H",
+		"ids": [
+			"F01751",
+			"F01754",
+			"008942"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Orczy tér (9, 23, 24, 28, 28A, 62, 72, 217E, 909, 909A)",
+		"shortName": "Orczy tér",
+		"ids": [
+			"F01217",
+			"F01220",
+			"F01216",
+			"F01219",
+			"047875",
+			"044301",
+			"F01187",
+			"F01186",
+			"F01218"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Anilin utca (Örs felé)",
+		"shortName": "Anilin utca",
+		"ids": [
+			"F03326"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Rákoskeresztúr, városközpont (összes)",
+		"shortName": "Rákoskeresztúr, városközpont",
+		"ids": [
+			"009684",
+			"011724",
+			"011723",
+			"011722",
+			"011726",
+			"011725",
+			"F03610"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Kada utca (összes)",
+		"shortName": "Kada utca",
+		"ids": [
+			"F01681",
+			"F01682",
+			"F01683",
+			"F01685"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Georgina utca",
+		"shortName": "Georgina utca",
+		"ids": [
+			"F03327",
+			"F03328"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Lehel utca / Róbert Károly körút (összes)",
+		"shortName": "Lehel utca / Róbert Károly körút",
+		"ids": [
+			"F02595",
+			"050249",
+			"F02592",
+			"F02591",
+			"F02598",
+			"F02593",
+			"F02596",
+			"F02594",
+			"F02597"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Tesztelő (Örs leszálló)",
+		"shortName": "Örs vezér tere M+H",
+		"ids": [
+			"F01755"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Tesztelő (Nagytarcsa)",
+		"shortName": "Nagytarcsa, Községháza",
+		"ids": [
+			"607670",
+			"607669"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Rákoscsaba-Újtelep, Tóalmás utca",
+		"shortName": "Rákoscsaba-Újtelep, Tóalmás utca",
+		"ids": [
+			"011768",
+			"F03584"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Batthyány tér M+H (összes)",
+		"shortName": "Batthyány tér M+H",
+		"ids": [
+			"F00065",
+			"F00064",
+			"F00066",
+			"F00057",
+			"008750",
+			"009629",
+			"F00067",
+			"067592",
+			"071927",
+			"F00059"
+		],
+		"exits": [
+			"-",
+			"A",
+			"A",
+			"B",
+			"C",
+			"C",
+			"D",
+			"D",
+			"D",
+			"D"
+		]
+	},
+	{
+		"longName": "Bosnyák tér (összes)",
+		"shortName": "Bosnyák tér",
+		"ids": [
+			//Nagy Lajos kir. útja
+			"F02837",
+			"F02830",
+			"F02834", //907 Örs felé
+			"F02831",
+			"F02832",
+			"043191",
+			//Csömöri út belváros felé
+			"F02829",
+			"F02828",
+			"F02827",
+			"F02826",
+			//Csömöri út Újpalota felé
+			//"F02836", //110, 112 induló
+			"F02840",
+			"F02835"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Svábhegy",
+		"shortName": "Svábhegy",
+		"ids": [
+			//Fogas
+			"F02317",
+			"F02316",
+			//Buszok
+			"F02442",
+			"F02459",
+			"099678",
+			"F02458"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Clark Ádám tér",
+		"shortName": "Clark Ádám tér",
+		"ids": [
+			//Villamos
+			"009675",
+			"009676",
+			//Lánchíd utca
+			"F00050",
+			"F00049",
+			//Alagút
+			"F00048",
+			"F00047",
+			//Fő utca
+			"049784",
+			"049785"
+		],
+		"exits": []
+	},
+	{
+		"longName": "Pestszentimre, vá. (összes)",
+		"shortName": "Pestszentimre, vasútállomás",
+		"ids": [
+			//Nagykőrösi út
+			"008950",
+			"008949",
+			//Nemes utca
+			"009234",
+			"F03665",
+			//Dózsa György utca
+			"F03672",
+			"F03668"
+		],
+		"exits": []
+	}
+]
