@@ -1,8 +1,13 @@
 # BKK-Futar-display
+
 ---
-**You can now try the program! / Már online is ki tudod próbálni!**
+
+**You can now try it online! / Már online is ki tudod próbálni!**
+
 **https://bkk-futar-display.vercel.app/**
+
 ---
+
 This app is a simulation of the displays of BKK found in Budapest. The backend is written in F#, while the frontend is written in Blazor (C#).
 
 The program is in hungarian, and as such, this readme will be written in hungarian aswell.
@@ -19,12 +24,12 @@ A használathoz szükséges egy **Futár API kulcs**, amihez szükséges egy key
 
 A követhető megállókat a **megallok.json** fájlba lehet felvinni. A követett megállókhoz meg lehet adni, hogy milyen kijáratot párosítson mellé a program (ld. bemutató kép).
 
+A programon belül a megálló nevére kattintva lehet másik megállót választani, valamint egy alternatív, fiktív-retro stílusra is át lehet váltani.
+
+---
 **Fiktív járatok jelenleg ki vannak véve a programból**
-*
+---
 Lehet fiktív járatokat létrehozni, amik alapesetben a **fiktiv.json** fájlban vannak. A program felépítéséből adódóan a megallok.json fájlban egyszerűen fel lehet venni fiktív megállókat is,
 ezáltal a saját járatainkat nem feltétlen csak létező megállóból lehet követni.
 
 ![image of fictive routes](https://github.com/viskimark/BKK-Futar-display/blob/main/fiktiv.png?raw=true)
-*
-
-A programon belül a megálló nevére kattintva lehet másik megállót választani, valamint egy alternatív, fiktív-retro stílusra is át lehet váltani.
