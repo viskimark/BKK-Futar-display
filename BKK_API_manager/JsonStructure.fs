@@ -2,7 +2,7 @@
 
 open FSharp.Data
 
-module JsonStructures =
+module JsonStructuresFS =
     type StopDepartureStructure = JsonProvider<
     """ {
       "currentTime": 1683558415924,
@@ -345,8 +345,10 @@ module JsonStructures =
         "class": "entryWithReferences"
       }
     } """>
+    //this is outdated, currently using JsonStructures.Stop
+    //-> will return to this in the future
     type StopsStructure = JsonProvider<Sample=
-    """ {
+    """{
 	    "stops": [
 		    {
 			    "longName": "typeof<string>",
@@ -373,7 +375,8 @@ module JsonStructures =
 			    ]
 		    }
         ]
-    } """, InferenceMode=InferenceMode.ValuesAndInlineSchemasOverrides>
+    }""", InferenceMode=InferenceMode.ValuesAndInlineSchemasOverrides>
+
     type FictiveStructure = JsonProvider<Sample=
     """ {
   "routes": [

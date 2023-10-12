@@ -1,10 +1,19 @@
-﻿namespace BlazorWASM
+﻿using BKK_API_manager;
+
+namespace BlazorWASM
 {
-	public static class Data
+	public class Data
 	{
-		public static string key = "";
-		public static BKK_API_manager.apiHandler apiHandler = new BKK_API_manager.apiHandler(key);
-		static int getStartIndex()
+		public apiHandler apiHandler;
+		public int index;
+		public Departure[] departures;
+        public Data(string key, string json)
+        {
+			var stops = System.Text.Json.JsonSerializer.Deserialize<JsonStructures.Stop[]>(json);
+			apiHandler = new apiHandler(key, stops);
+			index = getStartIndex();
+		}
+        int getStartIndex()
 		{
 			int index;
 			try
@@ -17,12 +26,10 @@
 			}
 			return index;
 		}
-		public static int index = getStartIndex();
-
-		public static BKK_API_manager.Departure[] departures = apiHandler.getDeparturesWithFictive(apiHandler.stops[index], "fiktiv.json");
-		public static void RefreshDepartures()
+		public async Task RefreshDepartures()
 		{
-			departures = apiHandler.getDeparturesWithFictive(apiHandler.stops[index], "fiktiv.json");
+			var _departures = await apiHandler.getDeparturesWithFictive(apiHandler.stops[index], "");
+			departures = _departures;
 		}
 	}
 }

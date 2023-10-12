@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lBRDLF4HhGgHm/q3/1vjm2i7g01ZPCBlIy4XsR+KbuQ=",
+  "Hash": "FC7P7rSXGes2RvEpPcDHcrHrbimSBKAWYrPfX+P3hvs=",
   "Source": "BlazorWASM",
   "BasePath": "/",
   "Mode": "Root",
@@ -1001,6 +1001,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\linked\\System.Runtime.Numerics.dll"
+    },
+    {
+      "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\compress\\6RF2XZFs.br",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\bin\\Debug\\net7.0\\publish\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Net.Http.Json.dll.br",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\linked\\System.Net.Http.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\linked\\System.Net.Http.Json.dll"
+    },
+    {
+      "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\compress\\6RF2XZFs.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\bin\\Debug\\net7.0\\publish\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Net.Http.Json.dll.gz",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\linked\\System.Net.Http.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\linked\\System.Net.Http.Json.dll"
     },
     {
       "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\compress\\7fAiW9bl.br",
@@ -3927,6 +3961,23 @@
       "OriginalItemSpec": "obj\\Debug\\net7.0\\linked\\System.Net.Http.dll"
     },
     {
+      "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\linked\\System.Net.Http.Json.dll",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\bin\\Debug\\net7.0\\publish\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Net.Http.Json.dll",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "obj\\Debug\\net7.0\\linked\\System.Net.Http.Json.dll"
+    },
+    {
       "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\linked\\System.Net.Primitives.dll",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -4471,6 +4522,40 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
+      "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\data\\fiktiv.json",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "data/fiktiv.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\data\\fiktiv.json"
+    },
+    {
+      "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\data\\megallok.json",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "data/megallok.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\data\\megallok.json"
+    },
+    {
       "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\favicon.png",
       "SourceId": "BlazorWASM",
       "SourceType": "Discovered",
@@ -4520,23 +4605,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\sample-data\\weather.json",
-      "SourceId": "BlazorWASM",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
     }
   ]
 }

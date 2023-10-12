@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazorWASM.styles.css",
-      "PackagePath": "staticwebassets\\BlazorWASM.styles.css"
-    },
-    {
       "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -23,6 +19,14 @@
     {
       "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\css\\box.svg",
+      "PackagePath": "staticwebassets\\css\\box.svg"
+    },
+    {
+      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\css\\oldStyle.css",
+      "PackagePath": "staticwebassets\\css\\oldStyle.css"
     },
     {
       "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
@@ -61,6 +65,18 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\data\\fiktiv.json",
+      "PackagePath": "staticwebassets\\data\\fiktiv.json"
+    },
+    {
+      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\data\\megallok.json",
+      "PackagePath": "staticwebassets\\data\\megallok.json"
+    },
+    {
       "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
@@ -71,10 +87,6 @@
     {
       "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
-    },
-    {
-      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BlazorWASM.Microsoft.AspNetCore.StaticWebAssets.props",

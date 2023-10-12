@@ -11,3 +11,6 @@ C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\ref
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.xml
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.pdb
 C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\ref\BKK_API_manager.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Debug\net7.0\JsonStructures.dll
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\bin\Debug\net7.0\JsonStructures.pdb
+C:\Users\1visk\source\repos\BKK_API_manager\BKK_API_manager\obj\Debug\net7.0\BKK_API_manager.fsproj.CopyComplete

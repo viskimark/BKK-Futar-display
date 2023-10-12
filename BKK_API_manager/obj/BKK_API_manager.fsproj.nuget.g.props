@@ -14,6 +14,8 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\1visk\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
+    <PkgMicrosoft_AspNet_WebApi_Client Condition=" '$(PkgMicrosoft_AspNet_WebApi_Client)' == '' ">C:\Users\1visk\.nuget\packages\microsoft.aspnet.webapi.client\5.2.9</PkgMicrosoft_AspNet_WebApi_Client>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\1visk\.nuget\packages\fsharp.core\7.0.200</PkgFSharp_Core>
     <PkgFSharp_Data Condition=" '$(PkgFSharp_Data)' == '' ">C:\Users\1visk\.nuget\packages\fsharp.data\6.2.0</PkgFSharp_Data>
   </PropertyGroup>

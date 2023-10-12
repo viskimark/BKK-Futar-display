@@ -3,83 +3,88 @@
 open FSharp.Data
 open System.IO
 
-module apiHandler =
+type apiHandler(key:string, stops:JsonStructures.Stop[]) =
     //let mutable private stopId = "stopId=BKK_F01703&stopId=BKK_F01701&"
-    let stopIds (stop:JsonStructures.StopsStructure.Stop) =
+    //let megallokJson = Http.RequestString(@"https://raw.githubusercontent.com/viskimark/BKK-Futar-display/23f5fe94527f9ec695f9a165a2576538f6ba99ff/megallok.json", responseEncodingOverride="UTF-8")
+    let stopIds (stop:JsonStructures.Stop) =
         let mutable str = ""
-        for id in stop.Ids do
+        for id in stop.ids do
             str <- str + "stopId=BKK_" + id + "&"
         str
         //stopId <- ""
         //for id in stopIds do
         //    stopId <- stopId + "stopId=" + id + "&"
 
-    let key = File.ReadAllText "key.txt"
-    let stopDeparturesUrl (stop:JsonStructures.StopsStructure.Stop) = "https://futar.bkk.hu/api/query/v1/ws/otp/api/where/arrivals-and-departures-for-stop?minutesBefore=1&minutesAfter=60&" + stopIds(stop) + "onlyDepartures=true&limit=60&version=4&includeReferences=compact&key=" + key
-    
-    let getJson url =
+    let stopDeparturesUrl (stop:JsonStructures.Stop) = "https://futar.bkk.hu/api/query/v1/ws/otp/api/where/arrivals-and-departures-for-stop?minutesBefore=1&minutesAfter=60&" + stopIds(stop) + "onlyDepartures=true&limit=60&version=4&includeReferences=compact&key=" + key
+
+    let getJson (url:string) =
         async {
-            let! text = Http.AsyncRequestString(url, responseEncodingOverride="UTF-8")
-            return JsonStructures.StopDepartureStructure.Parse(text)
+            let Http = new System.Net.Http.HttpClient()
+            let! text = Http.GetStringAsync(url) |> Async.AwaitTask
+            return JsonStructuresFS.StopDepartureStructure.Parse(text)
         }
     
-    let stops = 
-        JsonStructures.StopsStructure.Parse(File.ReadAllText("megallok.json")).Stops
-        |> Array.sortBy (fun (s:JsonStructures.StopsStructure.Stop) -> s.LongName)
-    let getStopLongName(index) =
-        stops[index].LongName
-    let getStopShortName(index) =
-        stops[index].ShortName
-    let stopNames =
-        [|for stop in stops do stop.LongName|]
+    member this.stops = 
+        stops
+        |> Array.sortBy (fun (s:JsonStructures.Stop) -> s.longName)
+    member this.stopNames =
+        [|for stop in this.stops do stop.longName|]
 
-    let private exits =
+    member this.exits =
         [|
-            for stop in stops do
-                for i in 0..stop.Ids.Length - 1 do
+            for stop in this.stops do
+                for i in 0..stop.ids.Length - 1 do
                     let exit =
-                        if stop.Exits.Length > 0 then stop.Exits[i] else "-"
-                    yield (stop.Ids[i], exit)
+                        if stop.exits.Length > 0 then stop.exits[i] else "-"
+                    yield (stop.ids[i], exit)
         |]
 
-    let getExit(stopId) =
+    member this.getStopLongName(index) =
+        this.stops[index].longName
+    member this.getStopShortName(index) =
+        this.stops[index].shortName
+
+    member this.getExit(stopId) =
         let arr = 
             [|
-                for exit in exits do
+                for exit in this.exits do
                     if ("BKK_" + (fst exit)) = stopId then yield (snd exit)
             |]
         if arr.Length > 0 then arr[0] else "-"
 
-    let getDeparturesFromJson (json:JsonStructures.StopDepartureStructure.Root) = 
+    member this.getDeparturesFromJson (json:JsonStructuresFS.StopDepartureStructure.Root) = 
         let references = json.Data.References
 
-        Array.map (fun (departure:JsonStructures.StopDepartureStructure.StopTime) ->
+        Array.map (fun (departure:JsonStructuresFS.StopDepartureStructure.StopTime) ->
             let departureTime =
                 match departure.PredictedDepartureTime with
                 |None -> departure.DepartureTime
                 |Some time -> time
 
-            new Departure(departure.TripId, new Route(departure.StopHeadsign, departure.TripId, references), departureTime, json.CurrentTime, getExit(departure.StopId))
+            new Departure(departure.TripId, new Route(departure.StopHeadsign, departure.TripId, references), departureTime, json.CurrentTime, this.getExit(departure.StopId))
         ) json.Data.Entry.StopTimes
             
 
-    let getDepartures (stop:JsonStructures.StopsStructure.Stop) =
+    member this.getDepartures (stop:JsonStructures.Stop) =
         async {
             try
                 let! json = getJson (stopDeparturesUrl stop)
-                return getDeparturesFromJson(json)
+                return this.getDeparturesFromJson(json)
             with
                 |ex -> 
+                    printfn "Could not load departures"
                     return [||]
-        } |> Async.StartAsTask
+        }
         
-    let getDeparturesWithFictive(stop:JsonStructures.StopsStructure.Stop, fictiveDeparturesPath) =
-        let departures = getDepartures(stop).Result
-        let fictiveDepartures = FictiveRoutes.getDepartures(stop.Ids)
+    member this.getDeparturesWithFictive(stop:JsonStructures.Stop, fictiveDeparturesPath) =
+        async{
+            let! departures = this.getDepartures(stop)
+            let fictiveDepartures = [||]//FictiveRoutes.getDepartures(stop.Ids)
 
-        let combinedDepartures = Array.append (departures) (fictiveDepartures)
-        let sort = Array.sortBy (fun (dep:Departure) -> 
-            dep.timeUntilDeparture.time) combinedDepartures
-        //Array.iter (fun (dep:Departure) -> 
-        //    printfn "%s %s" dep.departureAsString dep.route.destination) sort
-        sort
+            let combinedDepartures = Array.append (departures) (fictiveDepartures)
+            let sort = Array.sortBy (fun (dep:Departure) -> 
+                dep.timeUntilDeparture.time) combinedDepartures
+            //Array.iter (fun (dep:Departure) -> 
+            //    printfn "%s %s" dep.departureAsString dep.route.destination) sort
+            return sort
+        } |> Async.StartAsTask

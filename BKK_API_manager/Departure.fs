@@ -20,7 +20,7 @@ type Route(destination:string, routeId:string, routeName:string, routeType:strin
     member this.color = color
     member this.textColor = textColor
 
-    new (destination:string, tripId:string, references:JsonStructures.StopDepartureStructure.References) =
+    new (destination:string, tripId:string, references:JsonStructuresFS.StopDepartureStructure.References) =
         let destination = destination
 
         let routeId =
