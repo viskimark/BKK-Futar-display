@@ -1,12 +1,14 @@
 ﻿@page "/"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@inject LocalStorageAccessor LocalStorageAccessor
 
 <head>
 	<link rel="stylesheet" href="/css/site.css" />
 </head>
 @if (!loaded)
 {
+
 	<table id="mainTable">
 		<tr>
 			<td>
@@ -17,8 +19,10 @@
 					<br>
 					If you don't yet have one, you can get one from <a href="https://opendata.bkk.hu/keys">this website</a>.
 				</p>
-				<input type="text" @bind="@key" />
-				<button @onclick="LoadApi">Enter</button>
+				<form @onsubmit=LoadApi>
+					<input id="apiInput" @bind="apiKey" />
+					<button>Enter</button>
+				</form>
 			</td>
 		</tr>
 	</table>
@@ -44,6 +48,7 @@ else
 						}
 					</select>
 					<button @onclick="NavigateToPage">Másik stílus</button>
+					<button @onclick="@(e => loaded = false)">Kilépés</button>
 				</td>
 			}
 			<td style="text-align:right; font-size:150%; padding-right:1%;" colspan="2">
@@ -239,7 +244,32 @@ else
 }
 
 @code {
-	private string key = "";
+	//localStorage
+	public string Key { get; set; } = "";
+	public string Value { get; set; } = "";
+	public string StoredValue { get; set; } = "";
+
+	public async Task SetValueAsync<T>(string key, T value)
+	{
+		await LocalStorageAccessor.SetValueAsync<T>(key, value);
+	}
+
+	public async Task<T> GetValueAsync<T>(string key)
+	{
+		return await LocalStorageAccessor.GetValueAsync<T>(key);
+	}
+
+	public async Task RemoveAsync(string key)
+	{
+		await LocalStorageAccessor.RemoveAsync(key);
+	}
+
+	public async Task ClearAllAsync()
+	{
+		await LocalStorageAccessor.Clear();
+	}
+	//---
+	private string apiKey = "";
 	private Data data;
 	private string json = "";
 	private bool loaded = false;
@@ -268,6 +298,7 @@ else
 	protected override async Task OnInitializedAsync()
 	{
 		json = await Http.GetStringAsync(@"https://raw.githubusercontent.com/viskimark/BKK-Futar-display/main/megallok.json");
+		apiKey = await GetValueAsync<string>("apiKey");
 	}
 
 	private void RefreshData(object source, System.Timers.ElapsedEventArgs e)
@@ -279,7 +310,9 @@ else
 
 	public async Task LoadApi()
 	{
-		data = new Data(key, json);
+		await SetValueAsync<string>("apiKey", apiKey);
+
+		data = new Data(apiKey, json);
 		await data.RefreshDepartures();
 
 		timer = new System.Timers.Timer();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L/exjwqQXFLikocsoK2kR089U6q0T7OPKwQnEX8KJz4=",
+  "Hash": "7ae3O7ojek5gIZLmgR0VYYnAUqjPbts66kUl3hzsLgU=",
   "Source": "BlazorWASM",
   "BasePath": "/",
   "Mode": "Root",
@@ -5812,6 +5812,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\LocalStorageAccessor.js",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "LocalStorageAccessor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\LocalStorageAccessor.js"
     }
   ]
 }

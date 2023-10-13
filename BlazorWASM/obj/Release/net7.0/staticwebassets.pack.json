@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
+      "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\LocalStorageAccessor.js",
+      "PackagePath": "staticwebassets\\LocalStorageAccessor.js"
+    },
+    {
       "Id": "C:\\Users\\1visk\\source\\repos\\BKK_API_manager\\BlazorWASM\\wwwroot\\css\\FrutigerNextPro-Bold.otf",
       "PackagePath": "staticwebassets\\css\\FrutigerNextPro-Bold.otf"
     },
