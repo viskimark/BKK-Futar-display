@@ -1,0 +1,6 @@
+*.sln
+.vs/
+BlazorUI/
+BoleroUI/
+CSTester/
+ConsoleTester/
