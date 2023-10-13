@@ -299,21 +299,6 @@ else
 	{
 		json = await Http.GetStringAsync(@"https://raw.githubusercontent.com/viskimark/BKK-Futar-display/main/megallok.json");
 		apiKey = await GetValueAsync<string>("apiKey");
-	}
-
-	private void RefreshData(object source, System.Timers.ElapsedEventArgs e)
-	{
-		// Code to refresh the data from the API.
-		// ...
-		InvokeAsync(StateHasChanged);
-	}
-
-	public async Task LoadApi()
-	{
-		await SetValueAsync<string>("apiKey", apiKey);
-
-		data = new Data(apiKey, json);
-		await data.RefreshDepartures();
 
 		timer = new System.Timers.Timer();
 		timer.Interval = 15000; // 15s
@@ -337,6 +322,21 @@ else
 			RefreshData(sender, args);
 		};
 		colorTimer.Start();
+	}
+
+	private void RefreshData(object source, System.Timers.ElapsedEventArgs e)
+	{
+		// Code to refresh the data from the API.
+		// ...
+		InvokeAsync(StateHasChanged);
+	}
+
+	public async Task LoadApi()
+	{
+		await SetValueAsync<string>("apiKey", apiKey);
+
+		data = new Data(apiKey, json);
+		await data.RefreshDepartures();
 
 		loaded = true;
 	}

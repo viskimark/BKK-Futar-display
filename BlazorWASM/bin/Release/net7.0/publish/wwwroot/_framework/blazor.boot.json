@@ -8,7 +8,7 @@
   "resources": {
     "assembly": {
       "BKK_API_manager.dll": "sha256-fnt239llN3VfNRnKE2x9v4j9Y+wLuZg2CuYxRVns9c0=",
-      "BlazorWASM.dll": "sha256-8R+HqjZ7bZAYE+v51SFj76z0Sqqjl2Ez4EqbmPpupAI=",
+      "BlazorWASM.dll": "sha256-3aLdy22oKqdRTAWzTN0Z0yFCTfAIFfLE4d64Ei+J3cI=",
       "FSharp.Core.dll": "sha256-l6T3GwxG5qkIdbi6whKwj+V2GlsfeQtfAEPDlU4R0\/o=",
       "FSharp.Data.Csv.Core.dll": "sha256-fTUJ9M3CyULLrvRnxl1Zt8nz0WAVXggJ8\/Zddhl1Ne4=",
       "FSharp.Data.dll": "sha256-48YPzI9yDuW9dlgFcHbssWrSTbh5pVj9Tn+se7svMNw=",
