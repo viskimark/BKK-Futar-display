@@ -245,10 +245,6 @@ else
 
 @code {
 	//localStorage
-	public string Key { get; set; } = "";
-	public string Value { get; set; } = "";
-	public string StoredValue { get; set; } = "";
-
 	public async Task SetValueAsync<T>(string key, T value)
 	{
 		await LocalStorageAccessor.SetValueAsync<T>(key, value);
@@ -339,5 +335,6 @@ else
 		await data.RefreshDepartures();
 
 		loaded = true;
+		showDropdown = false;
 	}
 }
