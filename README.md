@@ -26,9 +26,6 @@ A követhető megállókat a **megallok.json** fájlba lehet felvinni. A követe
 
 A programon belül a megálló nevére kattintva lehet másik megállót választani, valamint egy alternatív, fiktív-retro stílusra is át lehet váltani.
 
----
-**Fiktív járatok jelenleg ki vannak véve a programból**
----
 Lehet fiktív járatokat létrehozni, amik alapesetben a **fiktiv.json** fájlban vannak. A program felépítéséből adódóan a megallok.json fájlban egyszerűen fel lehet venni fiktív megállókat is,
 ezáltal a saját járatainkat nem feltétlen csak létező megállóból lehet követni.
 
