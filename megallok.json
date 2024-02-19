@@ -424,5 +424,13 @@
 			"F03668"
 		],
 		"exits": []
+	},
+	{
+		"longName": "Galagonya utca",
+		"shortName": "Galagonya utca",
+		"ids": [
+			"F00602"
+		],
+		"exits": []
 	}
 ]
